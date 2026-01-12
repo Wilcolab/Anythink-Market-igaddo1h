@@ -1,9 +1,0 @@
-The content for this file was referenced in attachments, but specific text was not included in the current context. Please provide the exact contents you want here, and I’ll update it immediately.
-function textToSnakeCase(text) {
-    return text
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, '_')
-        .replace(/[^\w_]/g, '');
-}
-
