@@ -1,9 +1,11 @@
+version: '3'
 services:
-  python-server:
-    build:
-      context: ./python-server
-      dockerfile: Dockerfile
+  app:
+    build: .
     ports:
-      - 8000:8000
-    volumes:
-      - ./python-server/src:/app/src
+      - "8000:8000"
+  
+  node-server:
+    build: ./simple-express-server
+    ports:
+      - "8001:3000"
